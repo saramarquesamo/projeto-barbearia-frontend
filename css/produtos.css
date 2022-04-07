@@ -1,0 +1,96 @@
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0; /*espaçamento interno do cabeçalho*/
+}
+
+.caixa{
+    position: relative; /*Quando eu quero que ele tenha um ponto absoluto, mas de dentro de alguma caixa, eu preciso que essa caixa levante, eu preciso que essa caixa também tenha um posicionamento, só que agora um posicionamento relativo, eu quero só que ela levante, position relative.*/
+    width: 940px;  /* largura padrão que se usa na web,*/
+    margin: 0 auto;
+
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;  /* espaçamento entre elementos li /  espaçamento externo espaçamento para a esquerda. Então, primeiro para o topo, depois para a direita, terceiro para baixo, por último para a esquerda, 0 0 0 15 pixels,*/
+}
+
+nav a{
+    text-transform: uppercase; /*colocar letra em maiusculo*/
+    color: #000000;
+    font-weight: bold; /*peso da fonte, mais forte*/
+    font-size: 22px; /*tamanho da fonte*/
+    text-decoration: none; /*tira o sumbliado do texto*/
+
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+
+
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border:2px solid #000000;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.produtos li:hover{
+    border-color: #c5ec16;
+    font-size: 40px ;
+}
+
+.produtos li:active{
+    border-color: rgb(7, 245, 166);
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold ;
+}
+
+.produtos img{
+    margin: auto;
+    width: 100%;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+.produto-preco{
+    font-size: 30px;
+    font-weight: bold ;
+    margin-top: 10px;
+}
+
+footer{
+    background-image: url('../imagens/bg.jpg');
+    text-align: center;
+    padding: 40px 0;
+
+}
+
+.rodape{
+    color: white;
+    font-size: 13px;
+    
+}
